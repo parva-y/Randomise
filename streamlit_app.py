@@ -3,7 +3,7 @@ import pandas as pd
 import io
 import random
 
-st.title("Random Row Sampler from CSV")
+st.title("Random Winner Selector")
 
 # Step 1: Upload CSV
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
@@ -17,7 +17,7 @@ if uploaded_file is not None:
     # Step 2: Select number of random rows
     max_rows = len(df)
     num_rows = st.number_input(
-        f"How many random rows do you want to select?",
+        f"How many random winners do you want to select?",
         min_value=1,
         max_value=max_rows,
         value=min(5, max_rows),
