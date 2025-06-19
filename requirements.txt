@@ -1,4 +1,4 @@
-streamlit
-pandas 
+streamlit>=1.33.0
+pandas
 io
 random
